@@ -58,8 +58,12 @@ $name = " bangladesh is a beautiful Country  <br>  ";
 // echo number_format(100000,2);
 
 
+session_start();
+echo "<pre>";
+//print_r ($_SESSION);
+echo "This Username is ". $_SESSION['username'];
 
-
+session_destroy();
 
 ?>
 </body>
