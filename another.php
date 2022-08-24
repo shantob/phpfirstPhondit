@@ -144,11 +144,12 @@ $students = [
 echo "Output :<br>";
 foreach ($students as $key => $values) {
     # code...
-    echo "Department :".$key.'<br>';
+    echo '<br>';
+    echo "Department :".$key.'<br>'.'<br>';
     echo "Student :".'<br>';
     foreach ($values as $key => $std) {
         foreach ($std as $key => $student) {
-            # code...
+            
             echo $key.': '.$student.', ';
         }
         echo "<br>";
