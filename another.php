@@ -74,13 +74,10 @@
     //     // $flag=0;
     //     echo "<b>Car Name : </b>";
     //     foreach ($values as $key => $car) {
-
-    //         // echo "<br>";
-
     //         if ($key++ != 0) {
-    //             echo ' - Model '.$car;
-    //             if ($key++ !=1) {
-    //                 echo ' -Licence '.$car;
+    //             echo ' - Model ' . $car;
+    //             if ($key++ != 1) {
+    //                 echo ' -Licence ' . $car;
     //             }
     //         } else {
     //             echo $car;
@@ -88,6 +85,30 @@
     //     }
     //     echo "<br>";
     // }
+
+    // echo "<br>";
+    // echo "<br>";
+
+    // echo "Car Name : ABCD , Model : 96 , Licence : 67 .";
+    // ...........................................
+    // echo "<br>";
+    // echo "<br>";
+
+    // $arr = [2, 3, -1, 23, -2323, 43, null, 2323, -3, -45, 34, 1, 1, 1];
+    // // write your code here...
+    // $len = count($arr);
+    // for ($i = 0; $i < $len; $i++) {
+    //     if ($arr[$i] < 0 or $arr[$i] == null) {
+    //         $arr[$i] = 1;
+    //     }
+
+    //     echo $arr[$i];
+    //     if ($i != $len - 1) {
+    //         echo ",";
+    //     }
+    // }
+
+
     ?>
 
 </body>
@@ -97,17 +118,17 @@
 
 
 <?php
-$students = [
-    'cse' => [
-        ['name' => 'Himel', 'email' => 'hemail@gmail.com', 'result' => '4'],
-        ['name' => "Zarin", 'email' => 'zarin@gmail.com', 'result' => '4'],
+// $students = [
+//     'cse' => [
+//         ['name' => 'Himel', 'email' => 'hemail@gmail.com', 'result' => '4'],
+//         ['name' => "Zarin", 'email' => 'zarin@gmail.com', 'result' => '4'],
 
-    ],
-    'bba' => [
-        ['name' => 'Tamim', 'email' => 'tamim@gmail.com', 'result' => '4'],
-        ['name' => 'Kafi', 'email' => 'kafi@gmail.com', 'result' => '3.9'],
-    ]
-];
+//     ],
+//     'bba' => [
+//         ['name' => 'Tamim', 'email' => 'tamim@gmail.com', 'result' => '4'],
+//         ['name' => 'Kafi', 'email' => 'kafi@gmail.com', 'result' => '3.9'],
+//     ]
+// ];
 // echo "<b>Output : </b>";
 // foreach ($students as $value) {
 //     echo $value['0'];
@@ -131,30 +152,30 @@ $students = [
 //         //echo "<br>";
 
 //         foreach ($value as $key => $stu) {
-           
+
 //                 echo $stu . ' Email : ';
-            
-           
+
+
 //         }
 //         echo "<br>";
 //     }
 // }
 // redoy vi..........................................................
 
-echo "Output :<br>";
-foreach ($students as $key => $values) {
-    # code...
-    echo '<br>';
-    echo "Department :".$key.'<br>'.'<br>';
-    echo "Student :".'<br>';
-    foreach ($values as $key => $std) {
-        foreach ($std as $key => $student) {
-            
-            echo $key.': '.$student.', ';
-        }
-        echo "<br>";
-    }
-}
+// echo "Output :<br>";
+// foreach ($students as $key => $values) {
+//     # code...
+//     echo '<br>';
+//     echo "Department :".strToupper($key).'<br>'.'<br>';
+//     echo "Student :".'<br>';
+//     foreach ($values as $key => $std) {
+//         foreach ($std as $key => $student) {
+
+//             echo ucwords($key).': '.$student.', ';
+//         }
+//         echo "<br>";
+//     }
+// }
 
 
 
@@ -343,5 +364,54 @@ foreach ($students as $key => $values) {
 //     }
 //     echo '</tr></table><br><br>';
 // }
+
+
+
+
+
+// ...................................................................................
+
+
+$num = 1000; // don't change the number, it will evaluate later
+
+print $num . PHP_EOL;
+
+$note100 = $num / 100; // possible notes
+$num = $num % 100; // remaining tk
+
+$note50 = $num / 50;
+$num = $num % 50;
+
+$note20 = $num / 20;
+$num = $num % 20;
+
+$note10 = $num / 10;
+$num = $num % 10;
+
+$note5 = $num / 5;
+$num = $num % 5;
+
+$note2 = $num / 2;
+$num = $num % 2;
+
+$note1 = $num / 1;
+$num = $num % 11;
+
+
+// write your code here...
+
+
+print $note100 . " note of tk 100" . PHP_EOL;
+
+print $note50 . " note of tk 50" . PHP_EOL;
+
+print $note20 . " note of tk 20" . PHP_EOL;
+
+print $note10 . " note of tk 10" . PHP_EOL;
+
+print $note5 . " note of tk 5" . PHP_EOL;
+
+print $note2 . " note of tk 2" . PHP_EOL;
+print $note1 . " note of tk 1" . PHP_EOL;
 
 ?>

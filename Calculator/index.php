@@ -35,8 +35,27 @@ echo "<hr> Basic Calculator 2 <hr>";
 
 
 // scientific.....................................
-//$scientificCalculatorObject2 = new ScientificCalculator(30, 60);
+$scientificCalculatorObject2 = new \Calculator\Scicentific\Calculator(30, 60);
 
 echo "sum : ".$scientificCalculatorObject2->sum();
 //echo $CalculatorObject->sum();
 // ..........................
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+$marks = [
+    ['Shanto','Bangla','50'],
+    ['Shanto','English','60'],
+    ['Shanto','Math','40'],
+    ['Shanto','Science','80'],
+];
+for ($row=0; $row < count($marks) ; $row++) { 
+    echo "<h3> ".$row." </h3>";
+    for ($col=0; $col < 3 ; $col++) { 
+
+      //print_r(array_count_values($col[2]));
+        // echo count($col[2]);
+        echo "<li>".$marks[$row][$col]."</li>";
+    }
+}

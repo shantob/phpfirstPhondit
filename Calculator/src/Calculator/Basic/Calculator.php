@@ -16,7 +16,7 @@
 // \Socity\Calculator();
 
 // calculator ...........................................
-namespace Calculator\Basic\Calculator;
+namespace Calculator\Basic;
 class Calculator
 {
     // property.............
@@ -42,3 +42,4 @@ class Calculator
         return $this->num1 - $this->num2;
     }
 }
+?>

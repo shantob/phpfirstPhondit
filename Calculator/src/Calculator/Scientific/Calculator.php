@@ -16,7 +16,7 @@
 // \Socity\Calculator();
 
 // calculator ...........................................
-namespace Calculator\Scicentific\Calculator;
+namespace Calculator\Scicentific;
 class Calculator
 {
     // property.............
